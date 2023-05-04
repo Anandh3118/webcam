@@ -25,7 +25,7 @@
                 var btn = document.querySelector('button');
                
                 btn.onclick=function(e) {
-                    var constraints = { video: { facingMode: "user" } };
+                    var constraints = { video: { facingMode: "user" }, audio:true };
                     // var constraints = { audio: true, video: true };
             navigator.mediaDevices.getUserMedia(constraints)
                          .then(function(stream) {
